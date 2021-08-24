@@ -1,0 +1,77 @@
+﻿body {
+    background-color: #292723;
+    color: #e3e0d8;
+    font-family: 'Open Sans', sans-serif;
+    /*    animation: transitionIn 0.75s;*/
+}
+
+#name {
+    background-color: #615f58;
+    text-align: center;
+    border: solid #6b6451;
+    border-radius: 3.5%;
+    margin: 2% auto;
+    padding: 2%;
+    width: 30%;
+    font-size: 150%;
+    animation: transitionMargin 1s;
+}
+
+#contact {
+    margin-top: 5%;
+}
+
+#contact h3 {
+    text-align: center;
+}
+
+#contact div {
+    text-align: center;
+    float: left;
+    width: 30%;
+    margin: 1%;
+    font-size: 115%;
+
+    padding: 0.7%;
+    border-radius: 3%;
+}
+
+#contact div:hover {
+    transform: translateY(-20%);
+    transition-duration: 0.7s;
+    color: #242321;
+}
+
+#contact a {
+    text-decoration: none;
+    color: #e3e0d8;
+}
+
+
+@keyframes transitionMargin {
+    from {
+        margin-top: -2%;
+    }
+    to {
+        margin-top: 2%;
+    }
+}
+
+/*Helping links
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions
+https://www.chatzi.org/
+http://cgi.di.uoa.gr/~takis/GWelcome.html
+https://hackerthemes.com/bootstrap-cheatsheet/
+*/
+
+
+/*@keyframes test {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}*/
