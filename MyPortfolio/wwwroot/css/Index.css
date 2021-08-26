@@ -46,6 +46,15 @@
         margin-left: 2% !important;
         margin-right: 2% !important;
     }
+    
+    .lang {
+        width: 27% !important;
+        margin-left: 11% !important;
+        margin-right: 11% !important;
+        height: 6em !important;
+        padding-top: 8% !important;
+        padding-bottom: 8% !important;
+    }
 }
 
 @media screen and (max-width: 600px) and (min-width: 480px) {
@@ -53,12 +62,35 @@
         margin-left: 8% !important;
         margin-right: 8% !important;
     }
+
+    .lang {
+        width: 27% !important;
+        margin-left: 11% !important;
+        margin-right: 11% !important;
+        height: 6em !important;
+        padding-top: 8% !important;
+        padding-bottom: 8% !important;
+    }
 }
 
 @media screen and (max-width: 900px) and (min-width: 600px) {
     .work-card {
         margin-left: 10% !important;
         margin-right: 10% !important;
+    }
+
+    .lang {
+        width: 22% !important;
+        margin-left: 5% !important;
+        margin-right: 5% !important;
+        height: 6em !important;
+        padding-top: 6% !important;
+        padding-bottom: 6% !important;
+    }
+
+    #js {
+        margin-left: 37.6% !important;
+        margin-right: 37.5% !important;
     }
 }
 
@@ -82,6 +114,55 @@ div.work-card:hover {
     border: solid #2a4452;
     padding-top: 4%;
     padding-bottom: 4%;
+}
+
+#general {
+    margin-top: 5%;
+}
+
+#general h3 {
+    text-align: center;
+}
+
+#general p {
+    text-align: center;
+}
+
+#skills {
+    margin-top: 5%;
+}
+
+#skills h3 {
+    text-align: center;
+}
+
+#skills p {
+    text-align: center;
+}
+
+.lang {
+    text-align: center;
+    padding: 2%;
+    width: 18%;
+    height: 50%;
+    background-color: #999882;
+    font-weight: bold;
+}
+
+.lang:hover {
+
+    transition-duration: 0.7s;
+    color: #5c5a54;
+}
+
+#boxes {
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+#boxes a {
+    text-decoration: none;
+    color: #e3e0d8;
 }
 
 #cont {
