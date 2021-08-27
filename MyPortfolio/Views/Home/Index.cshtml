@@ -35,95 +35,129 @@
     });
 </script>
 
-<div class="container rounded" id="name">
-    Giannis Zapantis
-</div>
+<body>
+    @*TODO: Add autoplay audio
+    https://www.w3schools.com/tags/tag_audio.asp
+    https://stackoverflow.com/questions/13810085/html5-audio-display-only-play-pause-and-mute-buttons
+    https://olafwempe.com/how-to-enable-audio-and-video-autoplay-with-sound-in-chrome-and-other-browsers-in-2019/*@
 
-<div class="container" id="cont">
-    <div id="work">
-        <h3>Work Experience</h3>
+    <a id="name-link" href="https://drive.google.com/file/d/1fSc6m638POhv6ZSftdWbl2TwcDGvyE9b/view?usp=sharing">
+        <div class="container rounded" id="name">
+            Giannis Zapantis
+        </div>
+    </a>
 
-        <div id="diata" class="card work-card m-0 bg-primary d-inline-block">
-            <img class="card-img" src="~/img/diatasys.png" alt="Card image" />
-            <div class="card-img-overlay">
-                <p class="card-text"><b>.NET Developer</b></p>
-                <a href="http://diatasys.com/" style="text-decoration: none;">
-                    <div id="visit-diata" class="rounded visit">
-                        <b>Visit</b>
-                    </div>
-                </a>
+    <div class="container" id="cont">
+        <div id="work">
+            <h3>Work Experience</h3>
+
+            <div id="diata" class="card work-card m-0 bg-primary d-inline-block">
+                <img class="card-img" src="~/img/diatasys.png" alt="Card image" />
+                <div class="card-img-overlay">
+                    <p class="card-text"><b>.NET Developer</b></p>
+                    <a href="http://diatasys.com/" style="text-decoration: none;">
+                        <div id="visit-diata" class="rounded visit">
+                            <b>Visit</b>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div id="algo" class="card work-card m-1 bg-primary d-inline-block" style="float: right;">
+                <img class="card-img" src="~/img/algorithmics.png" alt="Card image" />
+                <div class="card-img-overlay">
+                    <p class="card-text"><b>Python Tutor</b></p>
+                    <a href="https://greece.alg.academy/" style="text-decoration: none;">
+                        <div id="visit-algo" class="rounded visit">
+                            <b>Visit</b>
+                        </div>
+                    </a>
+                </div>
             </div>
         </div>
-        
-        <div id="algo" class="card work-card m-1 bg-primary d-inline-block" style="float: right;">
-            <img class="card-img" src="~/img/algorithmics.png" alt="Card image" />
-            <div class="card-img-overlay">
-                <p class="card-text"><b>Python Tutor</b></p>
-                <a href="https://greece.alg.academy/" style="text-decoration: none;">
-                    <div id="visit-algo" class="rounded visit">
-                        <b>Visit</b>
-                    </div>
-                </a>
+
+        <div id="general">
+            <h3>General Information</h3>
+
+            <p>
+                I'm an undergradute student of the National and Kapodistrian University in Athens. Specially, I'm studying
+                in the Department of Informatics and Telecommunications.
+
+                Except my programming skills, I also:
+                <ul>
+                    <li>Have a Certificate of level C2 (Proficiency), in English</li>
+                    <li>Have a Certificate of level B1 (Sorbonne), in French</li>
+                    <li>My native language is Greek</li>
+                </ul>
+            </p>
+        </div>
+
+        <div id="skills">
+            <h3>Programming skills</h3>
+
+            <p>
+                Below are listed programming languages, frameworks and technologies I have learned through work experience, university's lessons,
+                online courses, mini-projects and many hours of exercise.
+            </p>
+
+            <div id="boxes">
+                <div class="rounded m-1 d-inline-block lang">C / C++</div>
+                <div class="rounded m-1 d-inline-block lang">C#</div>
+                <div class="rounded m-1 d-inline-block lang">.NET Core</div>
+                <div class="rounded m-1 d-inline-block lang">SQL</div>
+                <div class="rounded m-1 d-inline-block lang">Python</div>
+                <div class="rounded m-1 d-inline-block lang">Assembly</div>
+                <div class="rounded m-1 d-inline-block lang">Java</div>
+                <div class="rounded m-1 d-inline-block lang">HTML / CSS</div>
+                <div class="rounded m-1 d-inline-block lang">Matlab</div>
+                <div id="js" class="rounded m-1 d-inline-block lang">JavaScript</div>
             </div>
         </div>
-    </div>
 
-    <div id="general">
-        <h3>General Information</h3>
+        <div id="university">
+            <h3>University's Courses</h3>
 
-        <p>
-            I'm an undergradute student of the National and Kapodistrian University in Athens. Specially, I'm studying
-            in the Department of Informatics and Telecommunications.
-            
-            Except my programming skills, I also:
-            <ul>
-                <li>Have a Certificate of level C2 (Proficiency), in English</li>
-                <li>Have a Certificate of level B1 (Sorbonne), in French</li>
-                <li>My native language is Greek</li>
-            </ul>
-        </p>
-    </div>
+            <p>
+                Here are some of the courses I have watched in my University and I have learned the most of them.
+                Except of the following courses, I have passed all of the courses for my year.
+            </p>
 
-    <div id="skills">
-        <h3>Programming skills</h3>
+            <div id="courses">
+                <ul>
+                    <li><a href="https://www.di.uoa.gr/en/studies/undergraduate/32">Discrete Mathematics</a></li>
+                    <li><a href="https://www.di.uoa.gr/en/studies/undergraduate/18">Introduction to Programming</a> &emsp;&emsp;&emsp;&ensp;&nbsp;<i style="color: #bfad7e; ">(learning C and basic algorithmics)</i></li>
+                    <li><a href="https://www.di.uoa.gr/en/studies/undergraduate/30">Logic Design</a></li>
+                    <li><a href="https://www.di.uoa.gr/en/studies/undergraduate/36">Computer Architecture I</a> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<i style="color: #bfad7e;">(learning Assembly and MIPS architecture)</i></li>
+                    <li><a href="https://www.di.uoa.gr/en/studies/undergraduate/34">Data Structures</a></li>
+                    <li><a href="https://www.di.uoa.gr/en/studies/undergraduate/39">Signals and Systems</a> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;&nbsp;<i style="color: #bfad7e;">(learning Matlab)</i></li>
+                    <li><a href="https://www.di.uoa.gr/en/studies/undergraduate/38">Object-Oriented Programming</a> &emsp;&emsp;&emsp;<i style="color: #bfad7e;">(learning C++ and Java)</i></li>
+                    <li><a href="https://www.di.uoa.gr/en/studies/undergraduate/44">Algorithms and Complexity</a></li>
+                    <li><a href="https://www.di.uoa.gr/en/studies/undergraduate/42">Communication Networs I</a></li>
+                    <li><a href="https://www.di.uoa.gr/en/studies/undergraduate/27">Design and Use of Database Systems</a> <i style="color: #bfad7e;">(learning SQL)</i></li>
+                </ul>
 
-        <p>
-            Below are listed programming languages, frameworks and technologies I have learned through work experience, university's lessons,
-            online courses, mini-projects and many hours of exercise.
-        </p>
+            </div>
+        </div>
 
-        <div id="boxes">
-            <a href="https://www.cplusplus.com/"><div class="rounded m-1 d-inline-block lang">C / C++</div></a>
-            <a href="https://docs.microsoft.com/en-us/dotnet/csharp/"><div class="rounded m-1 d-inline-block lang">C#</div></a>
-            <a href="https://docs.microsoft.com/en-us/dotnet/"><div class="rounded m-1 d-inline-block lang">.NET Core</div></a>
-            <a href="https://www.mysql.com/"><div class="rounded m-1 d-inline-block lang">SQL</div></a>
-            <a href="https://www.python.org/"><div class="rounded m-1 d-inline-block lang">Python</div></a></a>
-            <a href="https://www.tutorialspoint.com/assembly_programming"><div class="rounded m-1 d-inline-block lang">Assembly</div></a>
-            <a href="https://www.java.com/en/"><div class="rounded m-1 d-inline-block lang">Java</div></a>
-            <a href="https://html.com/"><div class="rounded m-1 d-inline-block lang">HTML / CSS</div></a>
-            <a href="https://www.mathworks.com/"><div class="rounded m-1 d-inline-block lang">Matlab</div></a>
-            <a href="https://www.javascript.com/"><div id="js" class="rounded m-1 d-inline-block lang">JavaScript</div></a>
+
+        <div id="contact">
+            <h3>Contact information</h3>
+
+            <a href="mailto:zapantis2@gmail.com">
+                <div class="rounded" style="background-color: #ff9800; ">
+                    <i class="fas fa-at"></i> Email
+                </div>
+            </a>
+            <a href="https://www.linkedin.com/in/giannis-zapantis-59018b1bb/">
+                <div class="rounded" style="background-color: #0077b5;">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </div>
+            </a>
+            <a href="https://github.com/tech-gian">
+                <div class="rounded" style="background-color: #6cc644;">
+                    <i class="fab fa-github"></i> GitHub
+                </div>
+            </a>
         </div>
     </div>
-
-    <div id="contact">
-        <h3>Contact information</h3>
-    
-        <a href="mailto:zapantis2@gmail.com">
-            <div class="rounded" style="background-color: #ff9800; ">
-                <i class="fas fa-at"></i> Email
-            </div>
-        </a>
-        <a href="https://www.linkedin.com/in/giannis-zapantis-59018b1bb/">
-            <div class="rounded" style="background-color: #0077b5;">
-                <i class="fab fa-linkedin"></i> LinkedIn
-            </div>
-        </a>
-        <a href="https://github.com/tech-gian">
-            <div class="rounded" style="background-color: #6cc644;">
-                <i class="fab fa-github"></i> GitHub
-            </div>
-        </a>
-    </div>
-</div>
-
+</body>
