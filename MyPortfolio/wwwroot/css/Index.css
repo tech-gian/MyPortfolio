@@ -5,6 +5,20 @@
     /*    animation: transitionIn 0.75s;*/
 }
 
+#controls {
+    position: absolute;
+    right: 1%;
+    top: 4%;
+}
+
+#controls a {
+    color: #757168;
+}
+
+#controls a:hover {
+    color: #5c5954;
+}
+
 #name {
     background-color: #615f58;
     text-align: center;
@@ -53,6 +67,10 @@
 }
 
 @media screen and (max-width: 480px) {
+    #controls {
+        top: 3%;
+    }
+    
     .work-card {
         margin-left: 2% !important;
         margin-right: 2% !important;
@@ -69,6 +87,10 @@
 }
 
 @media screen and (max-width: 600px) and (min-width: 480px) {
+    #controls {
+        top: 3%;
+    }
+
     .work-card {
         margin-left: 8% !important;
         margin-right: 8% !important;
@@ -85,6 +107,10 @@
 }
 
 @media screen and (max-width: 900px) and (min-width: 600px) {
+    #controls {
+        top: 3.5%;
+    }
+
     .work-card {
         margin-left: 10% !important;
         margin-right: 10% !important;
