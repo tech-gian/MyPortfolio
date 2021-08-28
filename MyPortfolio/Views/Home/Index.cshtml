@@ -36,10 +36,12 @@
 </script>
 
 <body>
-    @*TODO: Add autoplay audio
-    https://www.w3schools.com/tags/tag_audio.asp
-    https://stackoverflow.com/questions/13810085/html5-audio-display-only-play-pause-and-mute-buttons
-    https://olafwempe.com/how-to-enable-audio-and-video-autoplay-with-sound-in-chrome-and-other-browsers-in-2019/*@
+    <audio id="player" src="~/sound/Consoul Trainin - Take Me To Infinity (Extended Mix).mp3" autoplay loop></audio>
+    <div id="controls">
+        <a href="#" onclick="document.getElementById('player').play()"><i class="fas fa-play"></i></a>
+        <a href="#" onclick="document.getElementById('player').pause()"><i class="fas fa-pause"></i></a>
+        <a href="#" onclick="document.getElementById('player').muted=!document.getElementById('player').muted"><i class="fas fa-volume-mute"></i></a>
+    </div>
 
     <a id="name-link" href="https://drive.google.com/file/d/1fSc6m638POhv6ZSftdWbl2TwcDGvyE9b/view?usp=sharing">
         <div class="container rounded" id="name">
