@@ -8,7 +8,7 @@
 #controls {
     position: absolute;
     right: 1%;
-    top: 4%;
+    top: 2%;
 }
 
 #controls a {
@@ -68,7 +68,7 @@
 
 @media screen and (max-width: 480px) {
     #controls {
-        top: 3%;
+        top: 1.2%;
     }
     
     .work-card {
@@ -84,11 +84,21 @@
         padding-top: 8% !important;
         padding-bottom: 8% !important;
     }
+
+    .right-card {
+        width: 70% !important;
+        margin-left: 35% !important;
+    }
+
+    .left-card {
+        width: 70% !important;
+        margin-left: 0 !important;
+    }
 }
 
 @media screen and (max-width: 600px) and (min-width: 480px) {
     #controls {
-        top: 3%;
+        top: 1.5%;
     }
 
     .work-card {
@@ -104,11 +114,21 @@
         padding-top: 8% !important;
         padding-bottom: 8% !important;
     }
+
+    .right-card {
+        width: 70% !important;
+        margin-left: 35% !important;
+    }
+
+    .left-card {
+        width: 70% !important;
+        margin-left: -3% !important;
+    }
 }
 
 @media screen and (max-width: 900px) and (min-width: 600px) {
     #controls {
-        top: 3.5%;
+        top: 1.7%;
     }
 
     .work-card {
@@ -125,6 +145,16 @@
         padding-bottom: 6% !important;
     }
 
+    .right-card {
+        width: 70% !important;
+        margin-left: 40% !important;
+    }
+
+    .left-card {
+        width: 70% !important;
+        margin-left: -8% !important;
+    }
+
     #js {
         margin-left: 37.6% !important;
         margin-right: 37.5% !important;
@@ -135,6 +165,16 @@
     .work-card {
         margin-left: 12% !important;
         margin-right: 12% !important;
+    }
+
+    .right-card {
+        width: 60% !important;
+        margin-left: 41% !important;
+    }
+
+    .left-card {
+        width: 60% !important;
+        margin-left: 0 !important;
     }
 }
 
@@ -220,6 +260,58 @@ div.work-card:hover {
     transition-duration: 0.7s;
     color: #918b7c;
     font-size: 17px;
+}
+
+#project {
+    margin-top: 5%;
+    display: grid;
+}
+
+#projects h3 {
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+#projects .card {
+    margin-top: 2%;
+    border: solid 4px #19191c;
+    background-color: #6d6f7a;
+}
+
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+
+.reveal.active {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.right-card {
+    margin-left: 41%;
+    width: 60%;
+    grid-column: 2;
+}
+
+.left-card {
+    margin-left: 0%;
+    width: 60%;
+    grid-column: 1;
+}
+
+#projects a {
+    color: #00326b;
+}
+
+#project a:hover {
+    color: #20004a;
 }
 
 #cont {
