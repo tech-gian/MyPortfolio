@@ -68,7 +68,7 @@
 
 @media screen and (max-width: 480px) {
     #controls {
-        top: 1.2%;
+        top: 1.5%;
     }
     
     .work-card {
@@ -98,7 +98,7 @@
 
 @media screen and (max-width: 600px) and (min-width: 480px) {
     #controls {
-        top: 1.5%;
+        top: 1.7%;
     }
 
     .work-card {
@@ -180,7 +180,7 @@
 
 div.work-card:hover {
     transform: translateY(-10%);
-    transition-duration: 0.7s;
+    transition: 0.7s ease;
     opacity: 0.5;
 }
 
@@ -229,7 +229,7 @@ div.work-card:hover {
 }
 
 .lang:hover {
-    transition-duration: 0.7s;
+    transition: 0.7s ease;
     color: #5c5a54;
 }
 
