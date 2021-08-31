@@ -1,4 +1,22 @@
-﻿body {
+﻿/* Scrollbar */
+html::-webkit-scrollbar {
+    width: 10px;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: #636363;
+    border-radius: 30px;
+}
+
+html::-webkit-scrollbar-thumb:hover {
+    background: #474747;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
     background-color: #292723;
     color: #e3e0d8;
     font-family: 'Open Sans', sans-serif;

@@ -7,6 +7,10 @@ for details on configuring this project to bundle and minify static web assets. 
     background-color: #154f61 !important;
 }
 
+footer {
+    background-color: #154f61 !important;
+}
+
 /**************/
 
 a.navbar-brand {
@@ -17,6 +21,7 @@ a.navbar-brand {
 
 .text-dark {
     color: #1f2326 !important;
+    font-weight: bold;
 }
 
 /* Provide sufficient contrast against white background */
@@ -75,7 +80,7 @@ body {
 /*  margin-bottom: 120px;*/
     display: flex;
     flex-direction: column;
-    margin-bottom: 1%;
+    margin-bottom: 0;
 }
 
 .footer {
@@ -89,4 +94,6 @@ body {
 
 .footer div {
     margin-top: 1%;
+    text-align: center;
+    margin-bottom: 1%;
 }
