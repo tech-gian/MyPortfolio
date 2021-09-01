@@ -24,6 +24,17 @@ namespace MyPortfolio
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+            
+            // For User mode:
+            //services.AddWebOptimizer(pipeline =>
+            //{
+            //    pipeline.AddCssBundle("/css/bundle.css", "css/**/*.css");
+            //});
+            // Alternative solution (Never use this)
+            //services.AddWebOptimizer();
+
+            // For Developer mode:
+            services.AddWebOptimizer(minifyJavaScript: false, minifyCss: false);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -40,6 +51,10 @@ namespace MyPortfolio
                 app.UseHsts();
             }
             app.UseHttpsRedirection();
+
+            // Adding Minification and Bundling
+            app.UseWebOptimizer();
+
             app.UseStaticFiles();
 
             app.UseRouting();
