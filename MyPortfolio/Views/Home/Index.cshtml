@@ -2,66 +2,16 @@
     ViewData["Title"] = "Home Page";
 }
 
-
-<script>
-    $(document).ready(function () {
-        @*1st Visit*@
-        $('#visit-diata').hide();
-
-        $('#diata').mouseover(function () {
-            $('#visit-diata').show("slow");
-        });
-
-        $('#diata').mouseout(function () {
-            if (!($('#diata').is(':hover'))) {
-                $('#visit-diata').hide("slow");
-            }
-        });
-
-
-        @*2nd Visit*@
-        $('#visit-algo').hide();
-
-        $('#algo').mouseover(function () {
-            $('#visit-algo').show("slow");
-        });
-
-        $('#algo').mouseout(function () {
-            if (!($('#algo').is(':hover'))) {
-                $('#visit-algo').hide("slow");
-            }
-        });
-
-    });
-</script>
-
-<script type="text/javascript">
-    window.addEventListener('scroll', reveal);
-
-    function reveal() {
-        var reveals = document.querySelectorAll('.reveal');
-
-        for (var i = 0; i < reveals.length; ++i) {
-            var windowheight = window.innerHeight;
-            var revealtop = reveals[i].getBoundingClientRect().top;
-            var revealpoint = 150;
-
-            if (revealtop < windowheight - revealpoint) {
-                reveals[i].classList.add('active');
-            }
-            else {
-                reveals[i].classList.remove('active');
-            }
-        }
-    }
-</script>
-
-@*TODO: Change transition in all items
-        Change work cards
+@*TODO: Change work cards
+        Write in Privacy page
         Delete music (Or let it. Decide)
-        Transfer js code to another file
         Add comments
-        Organize code*@
+        Organize code
+        Minify images
+        Check the process for minification and bundling (startup.cs and layout.cshtml)*@
+
+@*  Useful links
+    https://docs.microsoft.com/en-us/aspnet/core/client-side/bundling-and-minification?view=aspnetcore-5.0*@
 
 <body>
     <audio id="player" src="~/sound/Consoul Trainin - Take Me To Infinity (Extended Mix).mp3" loop></audio>
@@ -71,19 +21,19 @@
         <a href="#" onclick="document.getElementById('player').muted=!document.getElementById('player').muted"><i class="fas fa-volume-mute"></i></a>
     </div>
 
-    <div class="container rounded" id="name">
+    <div class="container rounded trans" id="name">
         <a id="name-link" href="https://drive.google.com/file/d/1fSc6m638POhv6ZSftdWbl2TwcDGvyE9b/view?usp=sharing">Giannis Zapantis</a>
     </div>
 
     <div class="container" id="cont">
-        <div id="work">
+        <div id="work" class="trans">
             <h3>Work Experience</h3>
 
             <div id="diata" class="card work-card m-0 bg-primary d-inline-block">
                 <img class="card-img" src="~/img/diatasys.png" alt="Card image" />
                 <div class="card-img-overlay">
                     <p class="card-text"><b>.NET Developer</b></p>
-                    <a href="http://diatasys.com/" style="text-decoration: none;">
+                    <a href="http://diatasys.com/">
                         <div id="visit-diata" class="rounded visit">
                             <b>Visit</b>
                         </div>
@@ -95,7 +45,7 @@
                 <img class="card-img" src="~/img/algorithmics.png" alt="Card image" />
                 <div class="card-img-overlay">
                     <p class="card-text"><b>Python Tutor</b></p>
-                    <a href="https://greece.alg.academy/" style="text-decoration: none;">
+                    <a href="https://greece.alg.academy/">
                         <div id="visit-algo" class="rounded visit">
                             <b>Visit</b>
                         </div>
@@ -104,7 +54,7 @@
             </div>
         </div>
 
-        <div id="general">
+        <div id="general" class="trans">
             <h3>General Information</h3>
 
             <p>
@@ -120,7 +70,7 @@
             </p>
         </div>
 
-        <div id="skills">
+        <div id="skills" class="trans">
             <h3>Programming skills</h3>
 
             <p>
@@ -142,7 +92,7 @@
             </div>
         </div>
 
-        <div id="university">
+        <div id="university" class="trans">
             <h3>University's Courses</h3>
 
             <p>
@@ -245,24 +195,24 @@
         </div>
 
 
-            <div id="contact">
-                <h3>Contact information</h3>
+        <div id="contact">
+            <h3>Contact information</h3>
 
-                <a href="mailto:zapantis2@gmail.com">
-                    <div class="rounded" style="background-color: #ff9800; ">
-                        <i class="fas fa-at"></i> Email
-                    </div>
-                </a>
-                <a href="https://www.linkedin.com/in/giannis-zapantis-59018b1bb/">
-                    <div class="rounded" style="background-color: #0077b5;">
-                        <i class="fab fa-linkedin"></i> LinkedIn
-                    </div>
-                </a>
-                <a href="https://github.com/tech-gian">
-                    <div class="rounded" style="background-color: #6cc644;">
-                        <i class="fab fa-github"></i> GitHub
-                    </div>
-                </a>
-            </div>
+            <a href="mailto:zapantis2@gmail.com">
+                <div class="rounded" style="background-color: #ff9800; ">
+                    <i class="fas fa-at"></i> Email
+                </div>
+            </a>
+            <a href="https://www.linkedin.com/in/giannis-zapantis-59018b1bb/">
+                <div class="rounded" style="background-color: #0077b5;">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </div>
+            </a>
+            <a href="https://github.com/tech-gian">
+                <div class="rounded" style="background-color: #6cc644;">
+                    <i class="fab fa-github"></i> GitHub
+                </div>
+            </a>
         </div>
+    </div>
 </body>
