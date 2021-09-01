@@ -1,8 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "sWs38NQiM9zU4kiGHUlUt10pfvuzNfYdDPcTB5TKSSVlv5flZrcGQn1iR8rQGvjKPGopBwHQSQD5TQpmmjDk7g==",
+  "dgSpecHash": "dlax9HB1bj5574v02Z3GxrW9LfNEuKRjuQYstJGllqzGC+J786H1XvKcr5FTNBGKXuAede7uTsFHm8eiLlC1rQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\zapan\\Source\\Repos\\MyPortfolio\\MyPortfolio\\MyPortfolio.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\zapan\\.nuget\\packages\\ligershark.weboptimizer.core\\3.0.319\\ligershark.weboptimizer.core.3.0.319.nupkg.sha512",
+    "C:\\Users\\zapan\\.nuget\\packages\\nuglify\\1.13.10\\nuglify.1.13.10.nupkg.sha512",
+    "C:\\Users\\zapan\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\5.0.0\\system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512",
+    "C:\\Users\\zapan\\.nuget\\packages\\system.text.encodings.web\\5.0.1\\system.text.encodings.web.5.0.1.nupkg.sha512",
+    "C:\\Users\\zapan\\.nuget\\packages\\system.text.json\\5.0.2\\system.text.json.5.0.2.nupkg.sha512"
+  ],
   "logs": []
 }

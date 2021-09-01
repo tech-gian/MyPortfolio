@@ -36,3 +36,9 @@ C:\Users\zapan\source\repos\MyPortfolio\MyPortfolio\obj\Debug\netcoreapp3.1\MyPo
 C:\Users\zapan\source\repos\MyPortfolio\MyPortfolio\obj\Debug\netcoreapp3.1\MyPortfolio.pdb
 C:\Users\zapan\source\repos\MyPortfolio\MyPortfolio\obj\Debug\netcoreapp3.1\MyPortfolio.genruntimeconfig.cache
 C:\Users\zapan\source\repos\MyPortfolio\MyPortfolio\obj\Debug\netcoreapp3.1\MyPortfolio.csproj.CopyComplete
+C:\Users\zapan\Source\Repos\MyPortfolio\MyPortfolio\bin\Debug\netcoreapp3.1\WebOptimizer.Core.dll
+C:\Users\zapan\Source\Repos\MyPortfolio\MyPortfolio\bin\Debug\netcoreapp3.1\NUglify.dll
+C:\Users\zapan\Source\Repos\MyPortfolio\MyPortfolio\bin\Debug\netcoreapp3.1\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\zapan\Source\Repos\MyPortfolio\MyPortfolio\bin\Debug\netcoreapp3.1\System.Text.Encodings.Web.dll
+C:\Users\zapan\Source\Repos\MyPortfolio\MyPortfolio\bin\Debug\netcoreapp3.1\System.Text.Json.dll
+C:\Users\zapan\Source\Repos\MyPortfolio\MyPortfolio\obj\Debug\netcoreapp3.1\MyPortfolio.MvcApplicationPartsAssemblyInfo.cs
