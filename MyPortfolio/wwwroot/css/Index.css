@@ -1,6 +1,6 @@
 ﻿/* Scrollbar */
 html::-webkit-scrollbar {
-    width: 10px;
+    width: 8px;
 }
 
 html::-webkit-scrollbar-thumb {
@@ -20,7 +20,6 @@ body {
     background-color: #292723;
     color: #e3e0d8;
     font-family: 'Open Sans', sans-serif;
-    /*    animation: transitionIn 0.75s;*/
 }
 
 #controls {
@@ -45,7 +44,18 @@ body {
     padding: 2%;
     width: 30%;
     font-size: 150%;
-    animation: transitionMargin 1s;
+}
+
+#name.trans {
+    opacity: 0;
+    transform: translateX(-150px);
+    transition: all 1.5s ease;
+}
+
+#name.trans.active {
+    opacity: 1;
+    transform: translateX(0px);
+
 }
 
 #name-link {
@@ -59,6 +69,18 @@ body {
     font-weight: bold;
 }
 
+#work.trans {
+    opacity: 0;
+    transform: translateX(150px);
+    transition: all 1.5s ease;
+    transition-delay: 1s;
+}
+
+#work.trans.active {
+    opacity: 1;
+    transform: translateX(0px);
+}
+
 #work h3 {
     text-align: center;
 }
@@ -66,6 +88,10 @@ body {
 #work img {
     height: 100%;
     width: 100%;
+}
+
+#work a {
+    text-decoration: none !important;
 }
 
 #work p {
@@ -85,6 +111,10 @@ body {
 }
 
 @media screen and (max-width: 480px) {
+    body {
+        margin-bottom: 10%;
+    }
+
     #controls {
         top: 1.5%;
     }
@@ -115,6 +145,10 @@ body {
 }
 
 @media screen and (max-width: 600px) and (min-width: 480px) {
+    body {
+        margin-bottom: 9%;
+    }
+
     #controls {
         top: 1.7%;
     }
@@ -145,6 +179,10 @@ body {
 }
 
 @media screen and (max-width: 900px) and (min-width: 600px) {
+    body {
+        margin-bottom: 8%;
+    }
+
     #controls {
         top: 1.7%;
     }
@@ -180,6 +218,10 @@ body {
 }
 
 @media screen and (max-width: 1200px) and (min-width: 900px) {
+    body {
+        margin-bottom: 7%;
+    }
+
     .work-card {
         margin-left: 12% !important;
         margin-right: 12% !important;
@@ -211,6 +253,18 @@ div.work-card:hover {
     padding-bottom: 4%;
 }
 
+#general.trans {
+    opacity: 0;
+    transform: translateY(-150px);
+    transition: all 1.5s ease;
+    transition-delay: 2s;
+}
+
+#general.trans.active {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
 #general {
     margin-top: 5%;
 }
@@ -222,6 +276,16 @@ div.work-card:hover {
 #general p {
     margin-top: 2%;
     text-align: center;
+}
+
+#skills.trans {
+    opacity: 0;
+    transition: all 1.5s ease;
+    transition-delay: 3s;
+}
+
+#skills.trans.active {
+    opacity: 1;
 }
 
 #skills {
@@ -254,6 +318,16 @@ div.work-card:hover {
 #boxes {
     margin-left: 3%;
     margin-right: 3%;
+}
+
+#university.trans {
+    opacity: 0;
+    transition: all 1.5s ease;
+    transition-delay: 4s;
+}
+
+#university.trans.active {
+    opacity: 1;
 }
 
 #university {
@@ -366,14 +440,14 @@ div.work-card:hover {
 }
 
 
-@keyframes transitionMargin {
+/*@keyframes transitionMargin {
     from {
         margin-top: -2%;
     }
     to {
         margin-top: 2%;
     }
-}
+}*/
 
 /*Helping links
 https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions

@@ -9,6 +9,17 @@ for details on configuring this project to bundle and minify static web assets. 
 
 footer {
     background-color: #154f61 !important;
+    color: #1f2326 !important;
+    font-weight: bold;
+}
+
+footer a {
+    text-decoration: none !important;
+    color: #1f2326 !important;
+}
+
+footer a:hover {
+    color: #0b0c0d !important;
 }
 
 /**************/
@@ -77,19 +88,20 @@ html {
 
 body {
   /* Margin bottom by footer height */
-/*  margin-bottom: 120px;*/
+  margin-bottom: 5%;
     display: flex;
     flex-direction: column;
-    margin-bottom: 0;
+/*    margin-bottom: 0;*/
 }
 
 .footer {
-    margin-top: auto;
-  /*position: absolute;
+/*    margin-top: auto;*/
+  position: absolute;
   bottom: 0;
   width: 100%;
   white-space: nowrap;
-  line-height: 60px;*/ /* Vertically center the text there */
+/*  line-height: 60px;  */
+  /*Vertically center the text there*/ 
 }
 
 .footer div {
