@@ -2,12 +2,16 @@
     ViewData["Title"] = "Home Page";
 }
 
-@*TODO: Change work cards
-        Write in Privacy page
+@*TODO: Change 'MyPortfolio' to 'Giannis Zapantis'
+        Save links in different (asp.net core) way
+        Change work cards
+        Make transition smooth on privacy-cookies (opacity from 0 to 1)
+        Add arrow-key movement to privacy-cookies ???
         Delete music (Or let it. Decide)
         Add comments
         Organize code
         Minify images
+
         Check the process for minification and bundling (startup.cs and layout.cshtml)*@
 
 @*  Useful links
@@ -21,12 +25,12 @@
         <a href="#" onclick="document.getElementById('player').muted=!document.getElementById('player').muted"><i class="fas fa-volume-mute"></i></a>
     </div>
 
-    <div class="container rounded trans" id="name">
+    <div class="container rounded trans scroll" id="name">
         <a id="name-link" href="https://drive.google.com/file/d/1fSc6m638POhv6ZSftdWbl2TwcDGvyE9b/view?usp=sharing">Giannis Zapantis</a>
     </div>
 
     <div class="container" id="cont">
-        <div id="work" class="trans">
+        <div id="work" class="trans main-div">
             <h3>Work Experience</h3>
 
             <div id="diata" class="card work-card m-0 bg-primary d-inline-block">
@@ -54,7 +58,7 @@
             </div>
         </div>
 
-        <div id="general" class="trans">
+        <div id="general" class="trans main-div">
             <h3>General Information</h3>
 
             <p>
@@ -70,7 +74,7 @@
             </p>
         </div>
 
-        <div id="skills" class="trans">
+        <div id="skills" class="trans main-div">
             <h3>Programming skills</h3>
 
             <p>
@@ -92,7 +96,7 @@
             </div>
         </div>
 
-        <div id="university" class="trans">
+        <div id="university" class="trans main-div">
             <h3>University's Courses</h3>
 
             <p>
@@ -117,7 +121,7 @@
             </div>
         </div>
 
-        <div id="projects">
+        <div id="projects" class="main-div">
             <h3>Personal Projects</h3>
 
             <div class="card right-card reveal" style="grid-row: 1;">
@@ -195,7 +199,7 @@
         </div>
 
 
-        <div id="contact">
+        <div id="contact" class="main-div">
             <h3>Contact information</h3>
 
             <a href="mailto:zapantis2@gmail.com">
