@@ -77,3 +77,41 @@ $(document).ready(function () {
     });
 
 /////////////////////////
+
+
+//////////////////////////////////////////////////
+// Arrow keys - left_right - Movement between divs
+
+$(window).keydown(function (e) {
+    if (e.keyCode == 39 || e.keyCode == 37) {
+        e.preventDefault();
+    }
+
+    var targetElement;
+    // Right
+    if (e.keyCode == 39) {
+        if ($('#name').hasClass('scroll')) {
+            $targetElement = $('#work');
+        }
+        else {
+            $targetElement = $('.scroll').next('.main-div');
+        }
+    }
+    // Left
+    else if (e.keyCode == 37) {
+        if ($('#work').hasClass('scroll')) {
+            $targetElement = $('#name');
+        }
+        else {
+            $targetElement = $('.scroll').prev('.main-div');
+        }
+    }
+
+    if (!$targetElement.length) { return; }
+    $('.scroll').removeClass('scroll');
+    $targetElement.addClass('scroll');
+
+    // Scroll element into view
+    $('html, body').clearQueue().animate({ scrollTop: $targetElement.offset().top }, 2500);
+
+});
