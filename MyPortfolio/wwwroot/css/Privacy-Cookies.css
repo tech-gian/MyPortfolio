@@ -1,0 +1,12 @@
+﻿body {
+    text-align: justify;
+}
+
+a {
+    text-decoration: none !important;
+    color: #bfad7e;
+}
+
+a:hover {
+    color: #807353;
+}
