@@ -42,3 +42,4 @@ C:\Users\zapan\Source\Repos\MyPortfolio\MyPortfolio\bin\Debug\netcoreapp3.1\Syst
 C:\Users\zapan\Source\Repos\MyPortfolio\MyPortfolio\bin\Debug\netcoreapp3.1\System.Text.Encodings.Web.dll
 C:\Users\zapan\Source\Repos\MyPortfolio\MyPortfolio\bin\Debug\netcoreapp3.1\System.Text.Json.dll
 C:\Users\zapan\Source\Repos\MyPortfolio\MyPortfolio\obj\Debug\netcoreapp3.1\MyPortfolio.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\zapan\Source\Repos\MyPortfolio\MyPortfolio\obj\Debug\netcoreapp3.1\Razor\Views\Home\Cookies.cshtml.g.cs
