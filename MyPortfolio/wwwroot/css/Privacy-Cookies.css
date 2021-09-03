@@ -10,3 +10,12 @@ a {
 a:hover {
     color: #807353;
 }
+
+div.trans {
+    opacity: 0;
+    transition: all 1.5s ease;
+}
+
+div.trans.active {
+    opacity: 1;
+}
