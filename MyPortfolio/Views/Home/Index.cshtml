@@ -3,7 +3,6 @@
 }
 
 @*TODO: Change 'MyPortfolio' to 'Giannis Zapantis'
-        Save links in different (asp.net core) way
         Change work cards
         Add comments
         Organize code
@@ -16,7 +15,7 @@
 
 <body>
     <div class="container rounded trans scroll" id="name">
-        <a id="name-link" href="https://drive.google.com/file/d/1fSc6m638POhv6ZSftdWbl2TwcDGvyE9b/view?usp=sharing">Giannis Zapantis</a>
+        <a id="name-link" href=@Model[0]>Giannis Zapantis</a>
     </div>
 
     <div class="container" id="cont">
@@ -27,7 +26,7 @@
                 <img class="card-img" src="~/img/diatasys.png" alt="Card image" />
                 <div class="card-img-overlay">
                     <p class="card-text"><b>.NET Developer</b></p>
-                    <a href="http://diatasys.com/">
+                    <a href=@Model[1]>
                         <div id="visit-diata" class="rounded visit">
                             <b>Visit</b>
                         </div>
@@ -39,7 +38,7 @@
                 <img class="card-img" src="~/img/algorithmics.png" alt="Card image" />
                 <div class="card-img-overlay">
                     <p class="card-text"><b>Python Tutor</b></p>
-                    <a href="https://greece.alg.academy/">
+                    <a href=@Model[2]>
                         <div id="visit-algo" class="rounded visit">
                             <b>Visit</b>
                         </div>
@@ -96,16 +95,16 @@
 
             <div id="courses">
                 <ul>
-                    <li><a href="https://www.di.uoa.gr/en/studies/undergraduate/32">Discrete Mathematics</a></li>
-                    <li><a href="https://www.di.uoa.gr/en/studies/undergraduate/18">Introduction to Programming</a> &emsp;&emsp;&emsp;&ensp;&nbsp;<i style="color: #bfad7e; ">(learning C and basic algorithmics)</i></li>
-                    <li><a href="https://www.di.uoa.gr/en/studies/undergraduate/30">Logic Design</a></li>
-                    <li><a href="https://www.di.uoa.gr/en/studies/undergraduate/36">Computer Architecture I</a> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<i style="color: #bfad7e;">(learning Assembly and MIPS architecture)</i></li>
-                    <li><a href="https://www.di.uoa.gr/en/studies/undergraduate/34">Data Structures</a></li>
-                    <li><a href="https://www.di.uoa.gr/en/studies/undergraduate/39">Signals and Systems</a> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;&nbsp;<i style="color: #bfad7e;">(learning Matlab)</i></li>
-                    <li><a href="https://www.di.uoa.gr/en/studies/undergraduate/38">Object-Oriented Programming</a> &emsp;&emsp;&emsp;<i style="color: #bfad7e;">(learning C++ and Java)</i></li>
-                    <li><a href="https://www.di.uoa.gr/en/studies/undergraduate/44">Algorithms and Complexity</a></li>
-                    <li><a href="https://www.di.uoa.gr/en/studies/undergraduate/42">Communication Networs I</a></li>
-                    <li><a href="https://www.di.uoa.gr/en/studies/undergraduate/27">Design and Use of Database Systems</a> <i style="color: #bfad7e;">(learning SQL)</i></li>
+                    <li><a href=@Model[3]>Discrete Mathematics</a></li>
+                    <li><a href=@Model[4]>Introduction to Programming</a> &emsp;&emsp;&emsp;&ensp;&nbsp;<i style="color: #bfad7e; ">(learning C and basic algorithmics)</i></li>
+                    <li><a href=@Model[5]>Logic Design</a></li>
+                    <li><a href=@Model[6]>Computer Architecture I</a> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<i style="color: #bfad7e;">(learning Assembly and MIPS architecture)</i></li>
+                    <li><a href=@Model[7]>Data Structures</a></li>
+                    <li><a href=@Model[8]>Signals and Systems</a> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;&nbsp;<i style="color: #bfad7e;">(learning Matlab)</i></li>
+                    <li><a href=@Model[9]>Object-Oriented Programming</a> &emsp;&emsp;&emsp;<i style="color: #bfad7e;">(learning C++ and Java)</i></li>
+                    <li><a href=@Model[10]>Algorithms and Complexity</a></li>
+                    <li><a href=@Model[11]>Communication Networs I</a></li>
+                    <li><a href=@Model[12]>Design and Use of Database Systems</a> <i style="color: #bfad7e;">(learning SQL)</i></li>
                 </ul>
 
             </div>
@@ -122,8 +121,8 @@
                         This project was an idea of one of my colleauges and me, so we could help the first-year students
                         of our university. We implemented the site and published it.
                     </p>
-                    <a href="https://dithub.gr/" class="card-link">Website</a>
-                    <a href="https://github.com/tech-gian/DitHub" class="card-link">GitHub's Repository</a>
+                    <a href=@Model[13] class="card-link">Website</a>
+                    <a href=@Model[14] class="card-link">GitHub's Repository</a>
                 </div>
             </div>
 
@@ -135,7 +134,7 @@
                         Based on some scientific articles and movie suggestions I wanted to upload, I created this site
                         so me and some of my friends could upload our articles.
                     </p>
-                    <a href="https://blog-in.gr/" class="card-link">Website</a>
+                    <a href=@Model[15] class="card-link">Website</a>
                 </div>
             </div>
 
@@ -146,7 +145,7 @@
                     <p class="card-text">
                         University's project about data structures in C language. We have implemented all of the known data structures.
                     </p>
-                    <a href="https://github.com/tech-gian/2020-Spring-Data-Structures" class="card-link">GitHub's Repository</a>
+                    <a href=@Model[16] class="card-link">GitHub's Repository</a>
                 </div>
             </div>
 
@@ -158,7 +157,7 @@
                         Project for unviersity's course. One of my colleauges and I had to implement a console-game with
                         heroes and monsters, to simulate fights.
                     </p>
-                    <a href="https://github.com/tech-gian/OOPproj_2021" class="card-link">GitHub's Repository</a>
+                    <a href=@Model[17] class="card-link">GitHub's Repository</a>
                 </div>
             </div>
 
@@ -170,7 +169,7 @@
                         Project to understand better the principles of Object Oriented Programming. We had to organise
                         a school in students, teachers, classes etc.
                     </p>
-                    <a href="https://github.com/tech-gian/School_Simulation_java" class="card-link">GitHub's Repository</a>
+                    <a href=@Model[18] class="card-link">GitHub's Repository</a>
                 </div>
             </div>
 
@@ -182,7 +181,7 @@
                         One mini-project to use oop principles in a console-app. The main purpose of this project
                         is to save, modify and delete, new or existing, contacts in your PC. <i>(basic CRUD operations, in optimal complexity)</i>
                     </p>
-                    <a href="https://github.com/tech-gian/Contact_book" class="card-link">GitHub's Repository</a>
+                    <a href=@Model[19] class="card-link">GitHub's Repository</a>
                 </div>
             </div>
 
@@ -192,17 +191,17 @@
         <div id="contact" class="main-div">
             <h3>Contact information</h3>
 
-            <a href="mailto:zapantis2@gmail.com">
+            <a href=@Model[20]>
                 <div class="rounded" style="background-color: #ff9800; ">
                     <i class="fas fa-at"></i> Email
                 </div>
             </a>
-            <a href="https://www.linkedin.com/in/giannis-zapantis-59018b1bb/">
+            <a href=@Model[21]>
                 <div class="rounded" style="background-color: #0077b5;">
                     <i class="fab fa-linkedin"></i> LinkedIn
                 </div>
             </a>
-            <a href="https://github.com/tech-gian">
+            <a href=@Model[22]>
                 <div class="rounded" style="background-color: #6cc644;">
                     <i class="fab fa-github"></i> GitHub
                 </div>
