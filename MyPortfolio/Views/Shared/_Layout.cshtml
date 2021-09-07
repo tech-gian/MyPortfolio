@@ -5,7 +5,16 @@
 
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - MyPortfolio</title>
+    @* Only my name displayed in home page *@
+    @if (ViewData["Title"].ToString() == "Home")
+    {
+        <title>Giannis Zapantis</title>
+    }
+    else 
+    {
+        <title>Giannis Zapantis - @ViewData["Title"]</title>
+    } 
+    
 
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link href="~/lib/fontawesome/css/all.css" rel="stylesheet" />
@@ -24,7 +33,7 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-toggleable-lg navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index"><b>MyPortfolio</b></a>
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index"><b>Giannis Zapantis</b></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -34,23 +43,19 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index"><i class="fas fa-home"></i> Home</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" href="/#work"><i class="fas fa-briefcase"></i> Work</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" href="/#general"><i class="fas fa-search"></i> General</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" href="/#skills"><i class="fas fa-laptop"></i> Skills</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" href="/#university"><i class="fas fa-book"></i> Courses</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" href="/#projects"><i class="fas fa-tasks"></i> Projects</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" href="/#contact"><i class="fas fa-at"></i> Contact</a>
+                        <li>
+                            <div class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#"
+                                   role="button" aria-haspopup="true" aria-expanded="false"><i class="fas fa-indent"></i> Sections</a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="/#work"><i class="fas fa-briefcase"></i> Work</a>
+                                    <a class="dropdown-item" href="/#general"><i class="fas fa-search"></i> General</a>
+                                    <a class="dropdown-item" href="/#skills"><i class="fas fa-laptop"></i> Skills</a>
+                                    <a class="dropdown-item" href="/#university"><i class="fas fa-book"></i> Courses</a>
+                                    <a class="dropdown-item" href="/#projects"><i class="fas fa-tasks"></i> Projects</a>
+                                    <a class="dropdown-item" href="/#contact"><i class="fas fa-at"></i> Contact</a>
+                                </div>
+                            </div>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy"><i class="fas fa-user-secret"></i> Privacy</a>
@@ -71,7 +76,7 @@
 
     <footer class="border-top footer">
         <div class="container">
-            &copy; 2021 - <a asp-area="" asp-controller="Home" asp-action="Index">MyPortfolio</a> - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a> - <a asp-area="" asp-controller="Home" asp-action="Cookies">Cookies</a>
+            &copy; 2021 - <a asp-area="" asp-controller="Home" asp-action="Index">Giannis Zapantis</a> - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a> - <a asp-area="" asp-controller="Home" asp-action="Cookies">Cookies</a>
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
