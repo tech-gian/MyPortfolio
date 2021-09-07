@@ -92,6 +92,11 @@ body {
     height: 10em;
 
     border: solid 2px #5f95b3;
+    border-radius: 50%;
+}
+
+.card-img {
+    border-radius: 50%;
 }
 
 @media screen and (max-width: 480px) {
@@ -104,8 +109,8 @@ body {
     }
     
     .work-card {
-        margin-left: 2% !important;
-        margin-right: 2% !important;
+        margin-left: 1% !important;
+        margin-right: 1% !important;
     }
     
     .lang {

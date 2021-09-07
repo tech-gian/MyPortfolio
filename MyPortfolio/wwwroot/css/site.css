@@ -22,6 +22,23 @@ footer a:hover {
     color: #0b0c0d !important;
 }
 
+.dropdown-toggle {
+    color: #1f2326 !important;
+    font-weight: bold;
+}
+
+.dropdown-toggle:hover {
+    color: #0b0c0d !important;
+}
+
+.dropdown-item:active {
+    background-color: #a1a1a1 !important;
+}
+
+.dropdown-menu {
+    background-color: #d1d1d1 !important;
+}
+
 /**************/
 
 a.navbar-brand {
