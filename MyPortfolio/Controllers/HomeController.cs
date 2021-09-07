@@ -17,6 +17,8 @@ namespace MyPortfolio.Controllers
         public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
+
+            // A List of links for the website
             Links = new List<String>
                 {
                 "https://drive.google.com/file/d/1fSc6m638POhv6ZSftdWbl2TwcDGvyE9b/view?usp=sharing",
