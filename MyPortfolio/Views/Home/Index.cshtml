@@ -1,12 +1,8 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Home";
 }
 
-@*TODO: Change 'MyPortfolio' to 'Giannis Zapantis'
-        Change work cards
-        Add comments
-        Organize code
-        Minify images
+@*TODO: Add comments / Organize code (for css files only)
 
         Check the process for minification and bundling (startup.cs and layout.cshtml)*@
 
@@ -14,10 +10,12 @@
     https://docs.microsoft.com/en-us/aspnet/core/client-side/bundling-and-minification?view=aspnetcore-5.0*@
 
 <body>
+    @* Div element for resume link *@
     <div class="container rounded trans scroll" id="name">
         <a id="name-link" href=@Model[0]>Giannis Zapantis</a>
     </div>
 
+    @* Div element for work cards *@
     <div class="container" id="cont">
         <div id="work" class="trans main-div">
             <h3>Work Experience</h3>
@@ -47,9 +45,9 @@
             </div>
         </div>
 
+        @* Div element for general information *@
         <div id="general" class="trans main-div">
             <h3>General Information</h3>
-
             <p>
                 I'm an undergradute student of the National and Kapodistrian University in Athens. Specially, I'm studying
                 in the Department of Informatics and Telecommunications.
@@ -63,9 +61,9 @@
             </p>
         </div>
 
+        @* Div element for my programming skills *@
         <div id="skills" class="trans main-div">
             <h3>Programming skills</h3>
-
             <p>
                 Below are listed programming languages, frameworks and technologies I have learned through work experience, university's lessons,
                 online courses, mini-projects and many hours of exercise.
@@ -85,9 +83,9 @@
             </div>
         </div>
 
+        @* Div element with some of the courses I have watched *@
         <div id="university" class="trans main-div">
             <h3>University's Courses</h3>
-
             <p>
                 Here are some of the courses I have watched in my University and I have learned the most of them.
                 Except of the following courses, I have passed all of the courses for my year.
@@ -110,6 +108,7 @@
             </div>
         </div>
 
+        @* Div element with some of my projects *@
         <div id="projects" class="main-div">
             <h3>Personal Projects</h3>
 
@@ -187,7 +186,7 @@
 
         </div>
 
-
+        @* Div element with some contact information *@
         <div id="contact" class="main-div">
             <h3>Contact information</h3>
 
