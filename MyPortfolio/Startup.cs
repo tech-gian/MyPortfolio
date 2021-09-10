@@ -32,7 +32,8 @@ namespace MyPortfolio
                 // Check out the link in Index to bundle js files
 
                 pipeline.MinifyCssFiles("css/**/*.css");
-                pipeline.AddCssBundle("/css/bundle.css", "css/**/*.css");
+                // pipeline.AddCssBundle("/css/bundle.css", "css/**/*.css");
+                // TODO: Fix problem when bundling
             });
             // Alternative solution (Never use this)
             // services.AddWebOptimizer();
