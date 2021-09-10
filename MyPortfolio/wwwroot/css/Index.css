@@ -1,4 +1,8 @@
-﻿/* Scrollbar */
+﻿/********************************/
+/* CSS Rules for the Index Page */
+/********************************/
+
+/* Scrollbar */
 html::-webkit-scrollbar {
     width: 8px;
 }
@@ -12,6 +16,8 @@ html::-webkit-scrollbar-thumb:hover {
     background: #474747;
 }
 
+
+/* html and body rules */
 html {
     scroll-behavior: smooth;
 }
@@ -22,6 +28,8 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+
+/* Div element, id=name */
 #name {
     background-color: #615f58;
     text-align: center;
@@ -53,6 +61,8 @@ body {
     font-weight: bold;
 }
 
+
+/* Div element, id=work */
 #work.trans {
     opacity: 0;
     transform: translateX(150px);
@@ -99,6 +109,8 @@ body {
     border-radius: 50%;
 }
 
+
+/* Media queries for a lot of elements */
 @media screen and (max-width: 480px) {
     body {
         margin-bottom: 10%;
@@ -246,6 +258,8 @@ div.work-card:hover {
     padding-bottom: 4%;
 }
 
+
+/* Div element, id=general */
 #general.trans {
     opacity: 0;
     transform: translateY(-150px);
@@ -271,6 +285,8 @@ div.work-card:hover {
     text-align: center;
 }
 
+
+/* Div element, id=skills */
 #skills.trans {
     opacity: 0;
     transition: all 1.5s ease;
@@ -313,6 +329,8 @@ div.work-card:hover {
     margin-right: 3%;
 }
 
+
+/* Div element, id=university */
 #university.trans {
     opacity: 0;
     transition: all 1.5s ease;
@@ -336,6 +354,8 @@ div.work-card:hover {
     text-align: center;
 }
 
+
+/* Div element, id=courses */
 #courses a {
     text-decoration: none;
     color: #e3e0d8;
@@ -347,6 +367,8 @@ div.work-card:hover {
     font-size: 17px;
 }
 
+
+/* Div element, id=project */
 #project {
     margin-top: 5%;
     display: grid;
@@ -399,6 +421,8 @@ div.work-card:hover {
     color: #20004a;
 }
 
+
+/* Div element, id=contact */
 #cont {
     margin-top: 5%;
 }
@@ -431,32 +455,3 @@ div.work-card:hover {
     text-decoration: none;
     color: #e3e0d8;
 }
-
-
-/*@keyframes transitionMargin {
-    from {
-        margin-top: -2%;
-    }
-    to {
-        margin-top: 2%;
-    }
-}*/
-
-/*Helping links
-https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions
-https://www.chatzi.org/
-http://cgi.di.uoa.gr/~takis/GWelcome.html
-https://hackerthemes.com/bootstrap-cheatsheet/
-*/
-
-
-/*@keyframes test {
-    from {
-        opacity: 0;
-        transform: translateY(-10px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}*/
