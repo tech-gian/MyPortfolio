@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "1KcTmAGgMPO00+1pw4c4qqemw/Ba/yje2FywkTASGEDGeE4zsBTvg8BmQxqjme0BrFfcCHf8nSH/1Zrv0l9bow==",
+  "dgSpecHash": "dlax9HB1bj5574v02Z3GxrW9LfNEuKRjuQYstJGllqzGC+J786H1XvKcr5FTNBGKXuAede7uTsFHm8eiLlC1rQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\zapan\\Source\\Repos\\GiannisZapantis\\MyPortfolio\\MyPortfolio.csproj",
+  "projectFilePath": "C:\\Users\\zapan\\Source\\Repos\\MyPortfolio\\MyPortfolio\\MyPortfolio.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\zapan\\.nuget\\packages\\ligershark.weboptimizer.core\\3.0.319\\ligershark.weboptimizer.core.3.0.319.nupkg.sha512",
     "C:\\Users\\zapan\\.nuget\\packages\\nuglify\\1.13.10\\nuglify.1.13.10.nupkg.sha512",

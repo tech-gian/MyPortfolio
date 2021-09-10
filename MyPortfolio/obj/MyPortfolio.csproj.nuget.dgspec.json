@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\zapan\\Source\\Repos\\GiannisZapantis\\MyPortfolio\\MyPortfolio.csproj": {}
+    "C:\\Users\\zapan\\Source\\Repos\\MyPortfolio\\MyPortfolio\\MyPortfolio.csproj": {}
   },
   "projects": {
-    "C:\\Users\\zapan\\Source\\Repos\\GiannisZapantis\\MyPortfolio\\MyPortfolio.csproj": {
+    "C:\\Users\\zapan\\Source\\Repos\\MyPortfolio\\MyPortfolio\\MyPortfolio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\zapan\\Source\\Repos\\GiannisZapantis\\MyPortfolio\\MyPortfolio.csproj",
+        "projectUniqueName": "C:\\Users\\zapan\\Source\\Repos\\MyPortfolio\\MyPortfolio\\MyPortfolio.csproj",
         "projectName": "MyPortfolio",
-        "projectPath": "C:\\Users\\zapan\\Source\\Repos\\GiannisZapantis\\MyPortfolio\\MyPortfolio.csproj",
+        "projectPath": "C:\\Users\\zapan\\Source\\Repos\\MyPortfolio\\MyPortfolio\\MyPortfolio.csproj",
         "packagesPath": "C:\\Users\\zapan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\zapan\\Source\\Repos\\GiannisZapantis\\MyPortfolio\\obj\\",
+        "outputPath": "C:\\Users\\zapan\\Source\\Repos\\MyPortfolio\\MyPortfolio\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\zapan\\AppData\\Roaming\\NuGet\\NuGet.Config",
