@@ -39,6 +39,8 @@ namespace MyPortfolio.Controllers
                 "https://blog-in.gr/",
                 "https://github.com/tech-gian/2020-Spring-Data-Structures",
                 "https://github.com/tech-gian/OOPproj_2021",
+                "https://contosocraftszap.azurewebsites.net/",
+                "https://github.com/tech-gian/ContosoCrafts",
                 "https://github.com/tech-gian/School_Simulation_java",
                 "https://github.com/tech-gian/Contact_book",
                 "mailto:zapantis2@gmail.com",

@@ -2,11 +2,7 @@
     ViewData["Title"] = "Home";
 }
 
-@*TODO: Add comments / Organize code (for css files only)
-
-        Check the process for minification and bundling (startup.cs and layout.cshtml)*@
-
-@*  Useful links
+@*  The css and js files are minified. Check this link to change it
     https://docs.microsoft.com/en-us/aspnet/core/client-side/bundling-and-minification?view=aspnetcore-5.0*@
 
 <body>
@@ -109,98 +105,110 @@
         </div>
 
         @* Div element with some of my projects *@
-        <div id="projects" class="main-div">
-            <h3>Personal Projects</h3>
+    <div id="projects" class="main-div">
+        <h3>Personal Projects</h3>
 
-            <div class="card right-card reveal" style="grid-row: 1;">
-                <div class="card-body">
-                    <h4 class="card-title">DitHub</h4>
-                    <h6 class="card-subtitle mb-2 text-muted" style="color: black !important;"><i>Programming language: Html, css, JavaScript</i></h6>
-                    <p class="card-text">
-                        This project was an idea of one of my colleauges and me, so we could help the first-year students
-                        of our university. We implemented the site and published it.
-                    </p>
-                    <a href=@Model[13] class="card-link">Website</a>
-                    <a href=@Model[14] class="card-link">GitHub's Repository</a>
-                </div>
+        <div class="card right-card reveal" style="grid-row: 1;">
+            <div class="card-body">
+                <h4 class="card-title">DitHub</h4>
+                <h6 class="card-subtitle mb-2 text-muted" style="color: black !important;"><i>Programming language: Html, css, JavaScript</i></h6>
+                <p class="card-text">
+                    This project was an idea of one of my colleauges and me, so we could help the first-year students
+                    of our university. We implemented the site and published it.
+                </p>
+                <a href=@Model[13] class="card-link">Website</a>
+                <a href=@Model[14] class="card-link">GitHub's Repository</a>
             </div>
-
-            <div class="card left-card reveal" style="grid-row: 2;">
-                <div class="card-body">
-                    <h4 class="card-title">Blog-in</h4>
-                    <h6 class="card-subtitle mb-2 text-muted" style="color: black !important;"><i>Implemented in WordPress</i></h6>
-                    <p class="card-text">
-                        Based on some scientific articles and movie suggestions I wanted to upload, I created this site
-                        so me and some of my friends could upload our articles.
-                    </p>
-                    <a href=@Model[15] class="card-link">Website</a>
-                </div>
-            </div>
-
-            <div class="card right-card reveal" style="grid-row: 3;">
-                <div class="card-body">
-                    <h4 class="card-title">Data Structures</h4>
-                    <h6 class="card-subtitle mb-2 text-muted" style="color: black !important;"><i>Programming language: C</i></h6>
-                    <p class="card-text">
-                        University's project about data structures in C language. We have implemented all of the known data structures.
-                    </p>
-                    <a href=@Model[16] class="card-link">GitHub's Repository</a>
-                </div>
-            </div>
-
-            <div class="card left-card reveal" style="grid-row: 4;">
-                <div class="card-body">
-                    <h4 class="card-title">Fight-Game</h4>
-                    <h6 class="card-subtitle mb-2 text-muted" style="color: black !important;"><i>Programming language: C++</i></h6>
-                    <p class="card-text">
-                        Project for unviersity's course. One of my colleauges and I had to implement a console-game with
-                        heroes and monsters, to simulate fights.
-                    </p>
-                    <a href=@Model[17] class="card-link">GitHub's Repository</a>
-                </div>
-            </div>
-
-            <div class="card right-card reveal" style="grid-row: 5;">
-                <div class="card-body">
-                    <h4 class="card-title">School Simulation</h4>
-                    <h6 class="card-subtitle mb-2 text-muted" style="color: black !important;"><i>Programming language: Java</i></h6>
-                    <p class="card-text">
-                        Project to understand better the principles of Object Oriented Programming. We had to organise
-                        a school in students, teachers, classes etc.
-                    </p>
-                    <a href=@Model[18] class="card-link">GitHub's Repository</a>
-                </div>
-            </div>
-
-            <div class="card left-card reveal" style="grid-row: 6;">
-                <div class="card-body">
-                    <h4 class="card-title">Contact-Book</h4>
-                    <h6 class="card-subtitle mb-2 text-muted" style="color: black !important;"><i>Programming language: Python</i></h6>
-                    <p class="card-text">
-                        One mini-project to use oop principles in a console-app. The main purpose of this project
-                        is to save, modify and delete, new or existing, contacts in your PC. <i>(basic CRUD operations, in optimal complexity)</i>
-                    </p>
-                    <a href=@Model[19] class="card-link">GitHub's Repository</a>
-                </div>
-            </div>
-
         </div>
+
+        <div class="card left-card reveal" style="grid-row: 2;">
+            <div class="card-body">
+                <h4 class="card-title">Blog-in</h4>
+                <h6 class="card-subtitle mb-2 text-muted" style="color: black !important;"><i>Implemented in WordPress</i></h6>
+                <p class="card-text">
+                    Based on some scientific articles and movie suggestions I wanted to upload, I created this site
+                    so me and some of my friends could upload our articles.
+                </p>
+                <a href=@Model[15] class="card-link">Website</a>
+            </div>
+        </div>
+
+        <div class="card right-card reveal" style="grid-row: 3;">
+            <div class="card-body">
+                <h4 class="card-title">Data Structures</h4>
+                <h6 class="card-subtitle mb-2 text-muted" style="color: black !important;"><i>Programming language: C</i></h6>
+                <p class="card-text">
+                    University's project about data structures in C language. We have implemented all of the known data structures.
+                </p>
+                <a href=@Model[16] class="card-link">GitHub's Repository</a>
+            </div>
+        </div>
+
+        <div class="card left-card reveal" style="grid-row: 4;">
+            <div class="card-body">
+                <h4 class="card-title">Fight-Game</h4>
+                <h6 class="card-subtitle mb-2 text-muted" style="color: black !important;"><i>Programming language: C++</i></h6>
+                <p class="card-text">
+                    Project for unviersity's course. One of my colleauges and I had to implement a console-game with
+                    heroes and monsters, to simulate fights.
+                </p>
+                <a href=@Model[17] class="card-link">GitHub's Repository</a>
+            </div>
+        </div>
+
+        <div class="card right-card reveal" style="grid-row: 5;">
+            <div class="card-body">
+                <h4 class="card-title">ContosoCrafts</h4>
+                <h6 class="card-subtitle mb-2 text-muted" style="color: black !important;"><i>Programming language: ASP.NET Core</i></h6>
+                <p class="card-text">
+                    Simple ASP.NET Core web application, hosted on Microsoft Azure.
+                </p>
+                <a href=@Model[18] class="card-link">Website</a>
+                <a href=@Model[19] class="card-link">GitHub's Repository</a>
+            </div>
+        </div>
+
+        <div class="card left-card reveal" style="grid-row: 6;">
+            <div class="card-body">
+                <h4 class="card-title">School Simulation</h4>
+                <h6 class="card-subtitle mb-2 text-muted" style="color: black !important;"><i>Programming language: Java</i></h6>
+                <p class="card-text">
+                    Project to understand better the principles of Object Oriented Programming. We had to organise
+                    a school in students, teachers, classes etc.
+                </p>
+                <a href=@Model[20] class="card-link">GitHub's Repository</a>
+            </div>
+        </div>
+
+        <div class="card right-card reveal" style="grid-row: 7;">
+            <div class="card-body">
+                <h4 class="card-title">Contact-Book</h4>
+                <h6 class="card-subtitle mb-2 text-muted" style="color: black !important;"><i>Programming language: Python</i></h6>
+                <p class="card-text">
+                    One mini-project to use oop principles in a console-app. The main purpose of this project
+                    is to save, modify and delete, new or existing, contacts in your PC. <i>(basic CRUD operations, in optimal complexity)</i>
+                </p>
+                <a href=@Model[21] class="card-link">GitHub's Repository</a>
+            </div>
+        </div>
+
+    </div>
 
         @* Div element with some contact information *@
         <div id="contact" class="main-div">
             <h3>Contact information</h3>
 
-            <a href=@Model[20]>
+            <a href=@Model[22]>
                 <div class="rounded" style="background-color: #ff9800; ">
                     <i class="fas fa-at"></i> Email
                 </div>
             </a>
-            <a href=@Model[21]>
+            <a href=@Model[23]>
                 <div class="rounded" style="background-color: #0077b5;">
                     <i class="fab fa-linkedin"></i> LinkedIn
                 </div>
             </a>
-            <a href=@Model[22]>
+            <a href=@Model[24]>
                 <div class="rounded" style="background-color: #6cc644;">
                     <i class="fab fa-github"></i> GitHub
                 </div>
