@@ -143,6 +143,11 @@ body {
         width: 70% !important;
         margin-left: 0 !important;
     }
+
+    #boxes {
+        margin-left: 0% !important;
+        margin-right: 0% !important;
+    }
 }
 
 @media screen and (max-width: 600px) and (min-width: 480px) {
@@ -213,7 +218,7 @@ body {
     }
 
     #js {
-        margin-left: 37.6% !important;
+        margin-left: 37.7% !important;
         margin-right: 37.5% !important;
     }
 }
