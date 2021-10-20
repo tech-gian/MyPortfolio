@@ -21,7 +21,7 @@ namespace MyPortfolio.Controllers
             // A List of links for the website
             Links = new List<String>
                 {
-                "https://drive.google.com/file/d/1fSc6m638POhv6ZSftdWbl2TwcDGvyE9b/view?usp=sharing",
+                "https://drive.google.com/file/d/1ycv_sAd-3GFjGVIIjutrM3YswO9FF04K/view?usp=sharing",
                 "http://diatasys.com/",
                 "https://greece.alg.academy/",
                 "https://www.di.uoa.gr/en/studies/undergraduate/32",
