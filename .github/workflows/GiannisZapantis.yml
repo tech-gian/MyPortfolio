@@ -1,17 +1,16 @@
-name: Build and deploy .NET Core app to Windows WebApp GiannisZapantis
+name: Build and deploy .NET Core application to Web App GiannisZapantis
 on:
   push:
     branches:
     - main
 env:
   AZURE_WEBAPP_NAME: GiannisZapantis
-  AZURE_WEBAPP_PACKAGE_PATH: MyPortfolio/publish
-  AZURE_WEBAPP_PUBLISH_PROFILE: ${{ secrets.GiannisZapantis_2f49 }}
+  AZURE_WEBAPP_PACKAGE_PATH: MyPortfolio\published
   CONFIGURATION: Release
   DOTNET_CORE_VERSION: 5.0.x
   WORKING_DIRECTORY: MyPortfolio
 jobs:
-  build-and-deploy:
+  build:
     runs-on: windows-latest
     steps:
     - uses: actions/checkout@v2
@@ -31,8 +30,8 @@ jobs:
       uses: azure/webapps-deploy@v2
       with:
         app-name: ${{ env.AZURE_WEBAPP_NAME }}
+        publish-profile: ${{ secrets.GIANNISZAPANTIS_2F49 }}
         package: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
-        publish-profile: ${{ env.AZURE_WEBAPP_PUBLISH_PROFILE }}
     - name: Publish Artifacts
       uses: actions/upload-artifact@v1.0.0
       with:
