@@ -17,8 +17,6 @@ C:\Users\zapan\source\repos\MyPortfolio\MyPortfolio\obj\Debug\netcoreapp3.1\MyPo
 C:\Users\zapan\source\repos\MyPortfolio\MyPortfolio\obj\Debug\netcoreapp3.1\MyPortfolio.RazorAssemblyInfo.cache
 C:\Users\zapan\source\repos\MyPortfolio\MyPortfolio\obj\Debug\netcoreapp3.1\MyPortfolio.RazorAssemblyInfo.cs
 C:\Users\zapan\source\repos\MyPortfolio\MyPortfolio\obj\Debug\netcoreapp3.1\staticwebassets\MyPortfolio.StaticWebAssets.Manifest.cache
-C:\Users\zapan\source\repos\MyPortfolio\MyPortfolio\obj\Debug\netcoreapp3.1\staticwebassets\MyPortfolio.StaticWebAssets.xml
-C:\Users\zapan\source\repos\MyPortfolio\MyPortfolio\obj\Debug\netcoreapp3.1\scopedcss\bundle\MyPortfolio.styles.css
 C:\Users\zapan\source\repos\MyPortfolio\MyPortfolio\obj\Debug\netcoreapp3.1\MyPortfolio.TagHelpers.input.cache
 C:\Users\zapan\source\repos\MyPortfolio\MyPortfolio\obj\Debug\netcoreapp3.1\MyPortfolio.TagHelpers.output.cache
 C:\Users\zapan\source\repos\MyPortfolio\MyPortfolio\obj\Debug\netcoreapp3.1\MyPortfolio.RazorCoreGenerate.cache
@@ -88,3 +86,4 @@ C:\Users\zapan\Source\Repos\GiannisZapantis\MyPortfolio\obj\Debug\netcoreapp3.1\
 C:\Users\zapan\Source\Repos\GiannisZapantis\MyPortfolio\obj\Debug\netcoreapp3.1\MyPortfolio.dll
 C:\Users\zapan\Source\Repos\GiannisZapantis\MyPortfolio\obj\Debug\netcoreapp3.1\MyPortfolio.pdb
 C:\Users\zapan\Source\Repos\GiannisZapantis\MyPortfolio\obj\Debug\netcoreapp3.1\MyPortfolio.genruntimeconfig.cache
+C:\Users\zapan\source\repos\MyPortfolio\MyPortfolio\bin\Debug\netcoreapp3.1\MyPortfolio.StaticWebAssets.xml
